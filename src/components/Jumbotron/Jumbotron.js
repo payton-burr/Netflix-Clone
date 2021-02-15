@@ -23,7 +23,7 @@ Jumbotron.SubTitle = function JumbotronSubTitle({ children, ...restProps }) {
 };
 
 Jumbotron.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
   direction: PropTypes.string,
 };
 
