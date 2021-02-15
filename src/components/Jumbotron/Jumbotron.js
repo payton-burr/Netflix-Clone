@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Item, Inner, Title, SubTitle } from './styles/style';
+import { Container, Item, Inner, Title, SubTitle, Image } from './styles/style';
 
 function Jumbotron({ children, direction = 'row', ...restProps }) {
   return (
@@ -20,6 +20,10 @@ Jumbotron.Title = function JumbotronTitle({ children, ...restProps }) {
 
 Jumbotron.SubTitle = function JumbotronSubTitle({ children, ...restProps }) {
   return <SubTitle {...restProps}>{children}</SubTitle>;
+};
+
+Jumbotron.Image = function JumbotronImage({ ...restProps }) {
+  return <Image {...restProps} />;
 };
 
 Jumbotron.propTypes = {
