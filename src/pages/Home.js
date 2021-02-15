@@ -1,11 +1,11 @@
 import React from 'react';
-import JumboTron from '../components/Jumbotron/Jumbotron';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 function Home() {
   return (
-    <JumboTron.Container>
-      <p>Hello</p>
-    </JumboTron.Container>
+    <Jumbotron.Container>
+      <Jumbotron.Title>Hello</Jumbotron.Title>
+    </Jumbotron.Container>
   );
 }
 
