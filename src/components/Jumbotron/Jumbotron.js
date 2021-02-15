@@ -32,11 +32,11 @@ Jumbotron.Container.propTypes = {
 };
 
 Jumbotron.Title.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Jumbotron.SubTitle.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default Jumbotron;
