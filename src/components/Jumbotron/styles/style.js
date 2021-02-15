@@ -14,6 +14,10 @@ export const Inner = styled.div`
   }
 `;
 
+export const Pane = styled.div`
+  width: 50%;
+`;
+
 export const Item = styled.div`
   display: flex;
   border-bottom: 8px solid #222222;
