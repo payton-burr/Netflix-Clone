@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Container, Item, Inner } from './styles/style';
 
 function Jumbotron({ children, direction = 'row', ...restProps }) {
   return (
