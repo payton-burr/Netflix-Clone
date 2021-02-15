@@ -14,7 +14,9 @@ export const Inner = styled.div`
   }
 `;
 
-export const Item = styled.div``;
+export const Item = styled.div`
+  display: flex;
+`;
 
 export const Container = styled.section``;
 
