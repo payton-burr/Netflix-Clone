@@ -22,7 +22,9 @@ export const Item = styled.div`
   overflow: hidden;
 `;
 
-export const Container = styled.section``;
+export const Container = styled.section`
+  background-color: #000000;
+`;
 
 export const Title = styled.h1`
   font-size: 50px;
