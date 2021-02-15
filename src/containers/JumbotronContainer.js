@@ -1,11 +1,16 @@
 import React from 'react';
+import jumbotronData from '../fixtures/jumbo.json';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 function JumbotronContainer() {
   return (
     <Jumbotron.Container>
-      <Jumbotron.Title>Hello</Jumbotron.Title>
-      <Jumbotron.SubTitle>Hello</Jumbotron.SubTitle>
+      {jumbotronData.map((item) => (
+        <Jumbotron key={item.id} direction={item.direction}>
+          <Jumbotron.Title>{item.title}</Jumbotron.Title>
+          <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
+        </Jumbotron>
+      ))}
     </Jumbotron.Container>
   );
 }
