@@ -1,6 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Item, Inner, Title, SubTitle, Image } from './styles/style';
+// eslint-disable-next-line prettier/prettier
+import {
+  Container,
+  Item,
+  Inner,
+  Title,
+  SubTitle,
+  Image,
+  Pane,
+} from './styles/style';
 
 function Jumbotron({ children, direction = 'row', ...restProps }) {
   return (
@@ -26,6 +35,10 @@ Jumbotron.Image = function JumbotronImage({ ...restProps }) {
   return <Image {...restProps} />;
 };
 
+Jumbotron.Pane = function JumbotronPane({ children, ...restProps }) {
+  return <Pane {...restProps}>{children}</Pane>;
+};
+
 Jumbotron.propTypes = {
   children: PropTypes.node,
   direction: PropTypes.string,
@@ -41,6 +54,10 @@ Jumbotron.Title.propTypes = {
 
 Jumbotron.SubTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
+
+Jumbotron.Pane.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Jumbotron;
