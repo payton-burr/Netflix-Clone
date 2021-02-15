@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Jumbotron({ children, direction = 'row', ...restProps }) {
   return (
@@ -7,5 +8,18 @@ function Jumbotron({ children, direction = 'row', ...restProps }) {
     </Item>
   );
 }
+
+Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
+};
+
+Jumbotron.propTypes = {
+  children: PropTypes.node,
+  direction: PropTypes.string,
+};
+
+Jumbotron.Container.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Jumbotron;
