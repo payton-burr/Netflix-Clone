@@ -12,4 +12,6 @@ export const Link = styled.a``;
 
 export const Title = styled.p``;
 
+export const Text = styled.p``;
+
 export const Break = styled.div``;
