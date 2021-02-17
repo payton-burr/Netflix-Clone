@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Row, Column, Link } from './styles/style';
+import { Container, Row, Column, Link, Title } from './styles/style';
 
 function Footer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -18,6 +18,10 @@ Footer.Link = function FooterLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
 };
 
+Footer.Title = function FooterTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+
 Footer.propTypes = {
   children: PropTypes.node,
 };
@@ -31,6 +35,10 @@ Footer.Column.propTypes = {
 };
 
 Footer.Link.propTypes = {
+  children: PropTypes.node,
+};
+
+Footer.Title.propTypes = {
   children: PropTypes.node,
 };
 
