@@ -22,8 +22,8 @@ Footer.Title = function FooterTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Footer.Break = function FooterBreak({ children, ...restProps }) {
-  return <Break {...restProps}>{children}</Break>;
+Footer.Break = function FooterBreak({ ...restProps }) {
+  return <Break {...restProps} />;
 };
 
 Footer.propTypes = {
@@ -43,10 +43,6 @@ Footer.Link.propTypes = {
 };
 
 Footer.Title.propTypes = {
-  children: PropTypes.node,
-};
-
-Footer.Break.propTypes = {
   children: PropTypes.node,
 };
 
