@@ -36,6 +36,8 @@ function FooterContainer() {
           <Footer.Link href="#">Legal Notices</Footer.Link>
         </Footer.Column>
       </Footer.Row>
+
+      {/* Footer.Button needs to go here */}
     </Footer>
   );
 }
