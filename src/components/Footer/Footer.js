@@ -7,7 +7,7 @@ import {
   Column,
   Link,
   Title,
-  Text,
+  Button,
   Break,
 } from './styles/style';
 
@@ -31,8 +31,8 @@ Footer.Title = function FooterTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Footer.Text = function FooterText({ children, ...restProps }) {
-  return <Text {...restProps}>{children}</Text>;
+Footer.Button = function FooterButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };
 
 Footer.Break = function FooterBreak({ ...restProps }) {
@@ -59,7 +59,7 @@ Footer.Title.propTypes = {
   children: PropTypes.node,
 };
 
-Footer.Text.propTypes = {
+Footer.Button.propTypes = {
   children: PropTypes.node,
 };
 
