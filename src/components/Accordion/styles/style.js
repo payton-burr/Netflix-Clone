@@ -7,7 +7,7 @@ export const Container = styled.section`
 
 export const Inner = styled.div`
   display: flex;
-  padding: 70px 45px;
+  padding: 70px 0;
   color: #ffffff;
   font-size: 26px;
   font-weight: normal;
@@ -40,11 +40,21 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  box-sizing: border-box;
   margin-bottom: 1px;
   background: #303030;
   padding: 0.8em 1.2em;
   user-select: none;
   align-items: center;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+
+    @media (max-width: 600px) {
+      width: 16px;
+    }
+  }
 
   @media (max-width: 600px) {
     font-size: 16px;
@@ -52,7 +62,6 @@ export const Header = styled.div`
 `;
 
 export const Body = styled.p`
-  max-width: 1200px;
   transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
   line-height: normal;
   background: #303030;
