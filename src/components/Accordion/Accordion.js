@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Container, Inner } from './styles/style';
+import { Container, Inner, Title } from './styles/style';
 
 function Accordion({ children, ...restProps }) {
   return (
@@ -10,7 +10,15 @@ function Accordion({ children, ...restProps }) {
   );
 }
 
+Accordion.Title = function AccordianTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+
 Accordion.propTypes = {
+  children: PropTypes.node,
+};
+
+Accordion.Title.propTypes = {
   children: PropTypes.node,
 };
 
