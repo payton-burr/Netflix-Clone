@@ -38,6 +38,7 @@ function FooterContainer() {
       </Footer.Row>
 
       {/* Footer.Button needs to go here */}
+      {/* Footer.Button will need to be changed to a select with 2 options */}
     </Footer>
   );
 }
