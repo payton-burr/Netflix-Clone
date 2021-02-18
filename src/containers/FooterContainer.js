@@ -36,7 +36,7 @@ function FooterContainer() {
           <Footer.Link href="#">Legal Notices</Footer.Link>
         </Footer.Column>
       </Footer.Row>
-
+      {/* <Footer.Break /> */}
       {/* Footer.Button needs to go here */}
       {/* Footer.Button will need to be changed to a select with 2 options */}
     </Footer>
