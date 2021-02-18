@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 import PropTypes from 'prop-types';
 import { Container, Inner, Item, Title, Header, Body } from './styles/style';
 
+const ToggleContext = createContext();
 function Accordion({ children, ...restProps }) {
   return (
     <Container {...restProps}>
@@ -11,7 +12,13 @@ function Accordion({ children, ...restProps }) {
 }
 
 Accordion.Item = function AccordianItem({ children, ...restProps }) {
-  return <Item {...restProps}>{children}</Item>;
+  const [toggleShow, setToggleShow] = useState(false);
+
+  return (
+    <ToggleContext.Provider value={{ toggleShow, setToggleShow }}>
+      <Item {...restProps}>{children}</Item>
+    </ToggleContext.Provider>
+  );
 };
 
 Accordion.Title = function AccordianTitle({ children, ...restProps }) {
@@ -19,11 +26,24 @@ Accordion.Title = function AccordianTitle({ children, ...restProps }) {
 };
 
 Accordion.Header = function AccordianHeader({ children, ...restProps }) {
-  return <Header {...restProps}>{children}</Header>;
+  const { toggleShow, setToggleShow } = useContext(ToggleContext);
+
+  return (
+    <Header onClick={() => setToggleShow(!toggleShow)} {...restProps}>
+      {children}
+      {toggleShow ? (
+        <img src="/images/icons/close-slim.png" alt="Close" />
+      ) : (
+        <img src="/images/icons/add.png" alt="Open" />
+      )}
+    </Header>
+  );
 };
 
 Accordion.Body = function AccordianBody({ children, ...restProps }) {
-  return <Body {...restProps}>{children}</Body>;
+  const { toggleShow } = useContext(ToggleContext);
+
+  return toggleShow && <Body {...restProps}>{children}</Body>;
 };
 
 Accordion.propTypes = {
