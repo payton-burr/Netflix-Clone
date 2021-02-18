@@ -38,7 +38,7 @@ export const Title = styled.h1`
 
 export const Header = styled.div`
   display: flex;
-  justify-content: space-betweeen;
+  justify-content: space-between;
   cursor: pointer;
   margin-bottom: 1px;
   background: #303030;
