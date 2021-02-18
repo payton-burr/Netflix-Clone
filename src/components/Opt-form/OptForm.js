@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Input, Button } from './styles/style';
+import { Container, Input, Button, Text } from './styles/style';
 
 function OptForm({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -18,12 +18,20 @@ OptForm.Button = function OptFormButton({ children, ...restProps }) {
   );
 };
 
+OptForm.Text = function OptFormText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
+};
+
 OptForm.propTypes = {
   children: PropTypes.node,
 };
 
 OptForm.Button.propTypes = {
   children: PropTypes.element,
+};
+
+OptForm.Text.propTypes = {
+  children: PropTypes.string,
 };
 
 export default OptForm;
