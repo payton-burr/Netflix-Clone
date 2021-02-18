@@ -6,11 +6,19 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 70px 56px;
   margin: auto;
+
+  @media (max-width: 1000px) {
+    padding: 70px 30px;
+  }
 `;
 
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+  @media (max-width: 1000px) {
+    grid-templat-columns: repeat(auto-fill, minman(150px, 1fr));
+  }
 `;
 
 export const Column = styled.div`
