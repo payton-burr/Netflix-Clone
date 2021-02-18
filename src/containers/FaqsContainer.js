@@ -1,7 +1,8 @@
 import React from 'react';
+import { Accordion } from '../components';
 
 function FaqsContainer() {
-  return <div></div>;
+  return <Accordion></Accordion>;
 }
 
 export default FaqsContainer;
