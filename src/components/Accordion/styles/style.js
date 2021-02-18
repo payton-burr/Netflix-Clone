@@ -10,4 +10,4 @@ export const Title = styled.h1``;
 
 export const Header = styled.div``;
 
-export const Body = styled.body``;
+export const Body = styled.p``;
