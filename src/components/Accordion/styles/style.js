@@ -12,8 +12,12 @@ export const Inner = styled.div`
   font-size: 26px;
   font-weight: normal;
   flex-direction: column;
-  max-width: 815px;
+  max-width: 677px;
   margin: auto;
+
+  @media (max-width: 600px) {
+    max-width: 474px;
+  }
 `;
 
 export const Item = styled.div`
