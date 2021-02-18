@@ -31,7 +31,7 @@ OptForm.Button.propTypes = {
 };
 
 OptForm.Text.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default OptForm;
