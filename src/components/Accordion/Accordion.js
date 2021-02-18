@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Container, Inner, Title, Header, Body } from './styles/style';
+import { Container, Inner, Item, Title, Header, Body } from './styles/style';
 
 function Accordion({ children, ...restProps }) {
   return (
@@ -9,6 +9,10 @@ function Accordion({ children, ...restProps }) {
     </Container>
   );
 }
+
+Accordion.Item = function AccordianItem({ children, ...restProps }) {
+  return <Item {...restProps}>{children}</Item>;
+};
 
 Accordion.Title = function AccordianTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
@@ -23,6 +27,10 @@ Accordion.Body = function AccordianBody({ children, ...restProps }) {
 };
 
 Accordion.propTypes = {
+  children: PropTypes.node,
+};
+
+Accordion.Item.propTypes = {
   children: PropTypes.node,
 };
 
