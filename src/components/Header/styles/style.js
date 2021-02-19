@@ -34,7 +34,7 @@ export const Link = styled.p``;
 export const Logo = styled.img`
   width: 133.2px;
   height: 36px;
-  margin-top: -8px;
+  margin-bottom: 8px;
   margin-right: 40px;
 
   @media (min-width: 1449px) {
