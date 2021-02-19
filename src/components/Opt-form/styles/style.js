@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  max-width: 950px;
+  width: 100%;
   height: 100%;
   margin-top 50px;
   flex-wrap: wrap;
@@ -64,8 +66,11 @@ export const Button = styled.button`
 `;
 
 export const Text = styled.p`
+  width: 714px;
   font-size: 20px;
-  margin: 0 3.65em;
+  margin: 0 5em;
+  padding: 0 2.365em 1em;
+  text-align: center;
 
   @media (max-width: 1000px) {
     padding: 6px;
