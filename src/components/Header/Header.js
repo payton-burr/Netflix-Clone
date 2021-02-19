@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container } from './styles/style';
+import { Link as ReactRouterLink } from 'react-router-dom';
+import { Background } from './styles/style';
 
-function Header() {
-  return <Container>hello</Container>;
+function Header({ children, ...restProps }) {
+  return <Background>hello</Background>;
 }
 
 export default Header;
