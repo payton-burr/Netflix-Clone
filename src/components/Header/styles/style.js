@@ -32,13 +32,14 @@ export const Container = styled.div`
 export const Link = styled.p``;
 
 export const Logo = styled.img`
-  height: 32px;
-  width: 108px;
+  width: 133.2px;
+  height: 36px;
+  margin-top: -8px;
   margin-right: 40px;
 
   @media (min-width: 1449px) {
-    height: 45px;
     width: 167px;
+    height: 45px;
   }
 `;
 
