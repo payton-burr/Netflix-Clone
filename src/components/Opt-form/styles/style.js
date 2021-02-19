@@ -6,4 +6,4 @@ export const Input = styled.input``;
 
 export const Button = styled.button``;
 
-export const Text = styled.div``;
+export const Text = styled.p``;
