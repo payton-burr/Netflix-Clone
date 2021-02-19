@@ -29,9 +29,20 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   height: 60px;
+  width: 220px;
   background: #e50914;
   color: #ffffff;
-  text-transform: uppercase;
+  padding: 0 32px;
+  font-size: 26px;
+  border: 0;
+  cursor: pointer;
+
+  img {
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+    width: 10px;
+    height: 20px;
+  }
 `;
 
 export const Text = styled.p``;
