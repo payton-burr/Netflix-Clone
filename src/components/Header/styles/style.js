@@ -5,6 +5,8 @@ export const Background = styled.section``;
 
 export const Container = styled.div``;
 
-export const Logo = styled.p``;
+export const Link = styled.p``;
+
+export const Logo = styled.img``;
 
 export const ButtonLink = styled(ReactRouterLink)``;
