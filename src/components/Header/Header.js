@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { Background, Container } from './styles/style';
+import { Background, Container, Logo } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
   return bg ? (
@@ -13,6 +13,14 @@ function Header({ bg = true, children, ...restProps }) {
 
 Header.Container = function HeaderContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
+};
+
+Header.Logo = function HeaderLogo({ ...restProps }) {
+  return (
+    <Logo {...restProps}>
+      <ReactRouterLink to="/" />
+    </Logo>
+  );
 };
 
 Header.propTypes = {
