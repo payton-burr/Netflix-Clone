@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { Background, Container, Logo } from './styles/style';
+import { Background, Container, Logo, ButtonLink } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
   return bg ? (
@@ -23,6 +23,10 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
   );
 };
 
+Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
+  return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};
+
 Header.propTypes = {
   children: PropTypes.node,
   bg: PropTypes.bool,
@@ -33,6 +37,10 @@ Header.Container.propTypes = {
 };
 
 Header.Logo.propTypes = {
+  to: PropTypes.string,
+};
+
+Header.ButtonLink.propTypes = {
   to: PropTypes.string,
 };
 
