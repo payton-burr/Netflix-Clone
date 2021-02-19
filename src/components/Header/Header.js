@@ -15,9 +15,9 @@ Header.Container = function HeaderContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
 
-Header.Logo = function HeaderLogo({ ...restProps }) {
+Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
-    <ReactRouterLink to="/">
+    <ReactRouterLink to={to}>
       <Logo {...restProps} />
     </ReactRouterLink>
   );
@@ -30,6 +30,10 @@ Header.propTypes = {
 
 Header.Container.propTypes = {
   children: PropTypes.node,
+};
+
+Header.Logo.propTypes = {
+  to: PropTypes.string,
 };
 
 export default Header;
