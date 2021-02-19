@@ -33,7 +33,21 @@ export const Container = styled.div`
   }
 `;
 
-export const Link = styled.p``;
+export const Link = styled.p`
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: ${({ active }) => (active ? '700' : 'normal')};
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+`;
 
 export const Logo = styled.img`
   width: 133.2px;
