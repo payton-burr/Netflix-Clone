@@ -25,6 +25,13 @@ export const Input = styled.input`
   font-size: 16px;
 `;
 
-export const Button = styled.button``;
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #e50914;
+  color: #ffffff;
+  text-transform: uppercase;
+`;
 
 export const Text = styled.p``;
