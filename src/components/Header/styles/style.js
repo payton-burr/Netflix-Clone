@@ -27,6 +27,10 @@ export const Container = styled.div`
   a {
     display: flex;
   }
+
+  @media (max-width: 950px) {
+    margin: 0 45px;
+  }
 `;
 
 export const Link = styled.p``;
@@ -34,12 +38,18 @@ export const Link = styled.p``;
 export const Logo = styled.img`
   width: 133.2px;
   height: 36px;
-  margin-bottom: 8px;
   margin-right: 40px;
+  margin-bottom: 8px;
+
+  @media (max-width: 950px) {
+    width: 108px;
+    height: 30px;
+  }
 
   @media (min-width: 1449px) {
     width: 167px;
     height: 45px;
+    margin-bottom: 0;
   }
 `;
 
