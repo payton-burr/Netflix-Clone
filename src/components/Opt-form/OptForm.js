@@ -27,7 +27,7 @@ OptForm.propTypes = {
 };
 
 OptForm.Button.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 OptForm.Text.propTypes = {
