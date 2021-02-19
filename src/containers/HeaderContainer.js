@@ -8,7 +8,7 @@ function HeaderContainer({ children }) {
     <Header>
       <Header.Container>
         <Header.Logo to={ROUTES.HOME} src="/images/misc/logo.svg" />
-        <Header.ButtonLink to={ROUTES.SIGN_IN} />
+        <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign in</Header.ButtonLink>
       </Header.Container>
 
       {children}
