@@ -17,9 +17,9 @@ Header.Container = function HeaderContainer({ children, ...restProps }) {
 
 Header.Logo = function HeaderLogo({ ...restProps }) {
   return (
-    <Logo {...restProps}>
-      <ReactRouterLink to="/" />
-    </Logo>
+    <ReactRouterLink to="/">
+      <Logo {...restProps} />
+    </ReactRouterLink>
   );
 };
 
