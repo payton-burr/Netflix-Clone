@@ -41,7 +41,7 @@ Header.Logo.propTypes = {
 };
 
 Header.ButtonLink.propTypes = {
-  to: PropTypes.string,
+  children: PropTypes.string,
 };
 
 export default Header;
