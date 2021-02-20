@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { OptForm } from '../components';
+import { Feature, OptForm } from '../components';
 import JumbotronContainer from '../containers/JumbotronContainer';
 import FooterContainer from '../containers/FooterContainer';
 import FaqsContainer from '../containers/FaqsContainer';
@@ -11,12 +11,18 @@ function Home() {
     <>
       <HeaderContainer>
         <OptForm>
-          <OptForm.Text>
-            Ready to watch? Enter your email to create or restart your
-            membership.
-          </OptForm.Text>
-          <OptForm.Input placeholder="Email Address" />
-          <OptForm.Button>Get Started</OptForm.Button>
+          <Feature>
+            <Feature.Title>
+              Unlimited movies, TV, shows, and more.
+            </Feature.Title>
+            <Feature.SubTitle>Watch anywhere. Cancel anytime.</Feature.SubTitle>
+            <OptForm.Text>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </OptForm.Text>
+            <OptForm.Input placeholder="Email Address" />
+            <OptForm.Button>Get Started</OptForm.Button>
+          </Feature>
         </OptForm>
       </HeaderContainer>
       <JumbotronContainer />
