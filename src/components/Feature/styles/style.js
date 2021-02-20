@@ -8,6 +8,15 @@ export const Container = styled.div`
   padding: 165px 45px;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  color: #ffffff;
+  max-width: 640px;
+  font-size: 50px;
+  margin: auto;
+
+  @media (max-width: 600px) {
+    font-size: 35px;
+  }
+`;
 
 export const SubTitle = styled.h2``;
