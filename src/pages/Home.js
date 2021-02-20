@@ -10,8 +10,8 @@ function Home() {
   return (
     <>
       <HeaderContainer>
-        <OptForm>
-          <Feature>
+        <Feature>
+          <OptForm>
             <Feature.Title>
               Unlimited movies, TV, shows, and more.
             </Feature.Title>
@@ -22,8 +22,8 @@ function Home() {
             </OptForm.Text>
             <OptForm.Input placeholder="Email Address" />
             <OptForm.Button>Get Started</OptForm.Button>
-          </Feature>
-        </OptForm>
+          </OptForm>
+        </Feature>
       </HeaderContainer>
       <JumbotronContainer />
       <FaqsContainer />
