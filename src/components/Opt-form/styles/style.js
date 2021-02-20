@@ -17,11 +17,15 @@ export const Container = styled.div`
 export const Input = styled.input`
   max-width: 450px;
   width: 100%;
-  border: 0;
   padding: 10px;
   height: 60px;
   box-sizing: border-box;
   font-size: 16px;
+  border-width: 5px;
+  border: 1px solid #8c8c8c;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: 1px solid #333333;
 `;
 
 export const Button = styled.button`
@@ -34,7 +38,9 @@ export const Button = styled.button`
   font-size: 26px;
   border: 0;
   cursor: pointer;
-  border-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left: 1px solid #333333;
 
   img {
     margin-left: 10px;
