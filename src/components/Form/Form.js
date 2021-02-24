@@ -7,6 +7,7 @@ import {
   TextSmall,
   Input,
   Error,
+  Link,
 } from './styles/style';
 
 function Form(children, ...restProps) {
@@ -23,6 +24,10 @@ Form.Text = function FormText(children, ...restProps) {
 
 Form.TextSmall = function FormTextSmall(children, ...restProps) {
   return <TextSmall {...restProps}>{children}</TextSmall>;
+};
+
+Form.Link = function FormLink(children, ...restProps) {
+  return <Link {...restProps}>{children}</Link>;
 };
 
 Form.Input = function FormInput(children, ...restProps) {

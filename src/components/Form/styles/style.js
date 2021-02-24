@@ -8,6 +8,8 @@ export const Text = styled.p``;
 
 export const TextSmall = styled.p``;
 
+export const Link = styled.p``;
+
 export const Input = styled.input``;
 
 export const Error = styled.p``;
