@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title, Text, Input } from './styles/style';
+import { Container, Title, Text, Input, Error } from './styles/style';
 
 function Form(children, ...restProps) {
   return <Container {...restProps}>{children}</Container>;
@@ -15,6 +15,10 @@ Form.Text = function FormText(children, ...restProps) {
 
 Form.Input = function FormInput(children, ...restProps) {
   return <Input {...restProps}>{children}</Input>;
+};
+
+Form.Error = function FormError(children, ...restProps) {
+  return <Error {...restProps}>{children}</Error>;
 };
 
 export default Form;
