@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Container,
   Base,
@@ -46,6 +47,42 @@ Form.Submit = function FormSubmit({ children, ...restProps }) {
 
 Form.Error = function FormError({ children, ...restProps }) {
   return <Error {...restProps}>{children}</Error>;
+};
+
+Form.propTypes = {
+  children: PropTypes.node,
+};
+
+Form.Base.propTypes = {
+  children: PropTypes.node,
+};
+
+Form.Title.propTypes = {
+  children: PropTypes.string,
+};
+
+Form.Text.propTypes = {
+  children: PropTypes.string,
+};
+
+Form.TextSmall.propTypes = {
+  children: PropTypes.string,
+};
+
+Form.Link.propTypes = {
+  children: PropTypes.element,
+};
+
+Form.Input.propTypes = {
+  children: PropTypes.element,
+};
+
+Form.Submit.propTypes = {
+  children: PropTypes.element,
+};
+
+Form.Error.propTypes = {
+  children: PropTypes.element,
 };
 
 export default Form;
