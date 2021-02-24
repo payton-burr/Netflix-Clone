@@ -1,19 +1,20 @@
 import styled from 'styled-components';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
-export const Container = styled.div``;
+export const Container = styled.section``;
 
-export const Base = styled.div``;
+export const Base = styled.form``;
 
-export const Title = styled.h3``;
+export const Title = styled.h1``;
 
-export const Text = styled.p``;
+export const Text = styled.h1``;
 
-export const TextSmall = styled.p``;
+export const TextSmall = styled.h2``;
 
-export const Link = styled.p``;
+export const Link = styled(ReactRouterLink)``;
 
 export const Input = styled.input``;
 
 export const Submit = styled.button``;
 
-export const Error = styled.p``;
+export const Error = styled.div``;
