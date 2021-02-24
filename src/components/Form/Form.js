@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title, Input } from './styles/style';
+import { Container, Title, Text, Input } from './styles/style';
 
 function Form(children, ...restProps) {
   return <Container {...restProps}>{children}</Container>;
@@ -7,6 +7,10 @@ function Form(children, ...restProps) {
 
 Form.Title = function FormTitle(children, ...restProps) {
   return <Title {...restProps}>{children}</Title>;
+};
+
+Form.Text = function FormText(children, ...restProps) {
+  return <Text {...restProps}>{children}</Text>;
 };
 
 Form.Input = function FormInput(children, ...restProps) {

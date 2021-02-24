@@ -4,4 +4,6 @@ export const Container = styled.div``;
 
 export const Title = styled.h3``;
 
+export const Text = styled.p``;
+
 export const Input = styled.input``;
