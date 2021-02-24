@@ -12,4 +12,6 @@ export const Link = styled.p``;
 
 export const Input = styled.input``;
 
+export const Submit = styled.button``;
+
 export const Error = styled.p``;

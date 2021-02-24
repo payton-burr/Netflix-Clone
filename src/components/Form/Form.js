@@ -8,6 +8,7 @@ import {
   Input,
   Error,
   Link,
+  Submit,
 } from './styles/style';
 
 function Form(children, ...restProps) {
@@ -32,6 +33,10 @@ Form.Link = function FormLink(children, ...restProps) {
 
 Form.Input = function FormInput(children, ...restProps) {
   return <Input {...restProps}>{children}</Input>;
+};
+
+Form.Submit = function FormSubmit(children, ...restProps) {
+  return <Submit {...restProps}>{children}</Submit>;
 };
 
 Form.Error = function FormError(children, ...restProps) {
