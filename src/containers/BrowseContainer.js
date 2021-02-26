@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from '../components';
 import * as ROUTES from '../constants/routes';
 import FirebaseContext from '../context/firebase';
@@ -6,7 +6,9 @@ import { SelectProfileContainer } from './SelectProfileContainer';
 import { FooterContainer } from './FooterContainer';
 
 function BrowseContainer() {
-  const profile = {
+  const [profile, setProfile] = useState({});
+
+  const user = {
     displayName: 'Payton',
     photoURL: '1',
   };
