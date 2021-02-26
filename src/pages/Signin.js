@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import HeaderContainer from '../containers/HeaderContainer';
 import { Form } from '../components';
 import FooterContainer from '../containers/FooterContainer';
+import * as ROUTES from '../constants/routes';
 
 function Signin() {
   const [error, setError] = useState('');
@@ -43,7 +44,8 @@ function Signin() {
             </Form.Submit>
 
             <Form.Text>
-              New to Netflix? <Form.Link>Sign up now.</Form.Link>
+              New to Netflix?{' '}
+              <Form.Link to={ROUTES.SIGN_UP}>Sign up now.</Form.Link>
             </Form.Text>
 
             <Form.TextSmall>
