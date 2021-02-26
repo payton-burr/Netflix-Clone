@@ -30,7 +30,7 @@ export function SelectProfileContainer({ user, setProfile }) {
             }
           >
             <Profiles.Image src={user.photoURL} />
-            <Profiles.Name>user.displayName</Profiles.Name>
+            <Profiles.Name>{user.displayName}</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
       </Profiles>
