@@ -18,8 +18,8 @@ Profiles.User = function ProfilesUser({ children, ...restProps }) {
   return <User {...restProps}>{children}</User>;
 };
 
-Profiles.Image = function ProfilesImage({ children, ...restProps }) {
-  return <Image {...restProps}>{children}</Image>;
+Profiles.Image = function ProfilesImage({ ...restProps }) {
+  return <Image {...restProps} />;
 };
 
 Profiles.Name = function ProfilesName({ children, ...restProps }) {
@@ -40,10 +40,6 @@ Profiles.List.propTypes = {
 
 Profiles.User.propTypes = {
   children: PropTypes.node,
-};
-
-Profiles.Image.propTypes = {
-  children: PropTypes.element,
 };
 
 Profiles.Name.propTypes = {
