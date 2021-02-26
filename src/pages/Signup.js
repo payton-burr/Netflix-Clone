@@ -33,8 +33,7 @@ function Signup() {
 
             <Form.Input
               type="email"
-              placeholder="Email"
-              autocomplete="off"
+              placeholder="Email Address"
               value={emailAddress}
               onChange={({ target }) => setEmailAddress(target.value)}
             />
