@@ -1,8 +1,9 @@
+/* eslint-disable import/prefer-default-export */
 import React from 'react';
 import jumbotronData from '../fixtures/jumbo.json';
 import { Jumbotron } from '../components';
 
-function JumbotronContainer() {
+export function JumbotronContainer() {
   return (
     <Jumbotron.Container>
       {jumbotronData.map((item) => (
@@ -19,5 +20,3 @@ function JumbotronContainer() {
     </Jumbotron.Container>
   );
 }
-
-export default JumbotronContainer;

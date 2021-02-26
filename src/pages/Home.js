@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { Feature, OptForm } from '../components';
-import JumbotronContainer from '../containers/JumbotronContainer';
-import FooterContainer from '../containers/FooterContainer';
-import FaqsContainer from '../containers/FaqsContainer';
-import HeaderContainer from '../containers/HeaderContainer';
+import { JumbotronContainer } from '../containers/JumbotronContainer';
+import { FooterContainer } from '../containers/FooterContainer';
+import { FaqsContainer } from '../containers/FaqsContainer';
+import { HeaderContainer } from '../containers/HeaderContainer';
 
 function Home() {
   return (

@@ -1,9 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { Accordion, OptForm } from '../components';
 import faqsData from '../fixtures/faqs.json';
 
-function FaqsContainer() {
+export function FaqsContainer() {
   return (
     <Accordion>
       <Accordion.Title>Frequently Asked Questions</Accordion.Title>
@@ -24,5 +25,3 @@ function FaqsContainer() {
     </Accordion>
   );
 }
-
-export default FaqsContainer;

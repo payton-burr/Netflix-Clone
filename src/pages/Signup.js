@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
-import HeaderContainer from '../containers/HeaderContainer';
+import { HeaderContainer } from '../containers/HeaderContainer';
 import { Form } from '../components';
-import FooterContainer from '../containers/FooterContainer';
+import { FooterContainer } from '../containers/FooterContainer';
 import * as ROUTES from '../constants/routes';
 
 function Signup() {

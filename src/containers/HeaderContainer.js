@@ -1,9 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../constants/routes';
 import { Header } from '../components';
 
-function HeaderContainer({ children }) {
+export function HeaderContainer({ children }) {
   return (
     <Header>
       <Header.Container>
@@ -19,5 +20,3 @@ function HeaderContainer({ children }) {
 HeaderContainer.propTypes = {
   children: PropTypes.node,
 };
-
-export default HeaderContainer;

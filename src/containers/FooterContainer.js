@@ -1,7 +1,8 @@
+/* eslint-disable import/prefer-default-export */
 import React from 'react';
 import { Footer } from '../components';
 
-function FooterContainer() {
+export function FooterContainer() {
   return (
     <Footer>
       <Footer.Title>Questions? Call 1-234-567-8910</Footer.Title>
@@ -42,5 +43,3 @@ function FooterContainer() {
     </Footer>
   );
 }
-
-export default FooterContainer;
