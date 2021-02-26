@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Title, List, User, Image } from './styles/style';
+import { Container, Title, List, User, Image, Name } from './styles/style';
 
 function Profiles({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -22,6 +22,10 @@ Profiles.Image = function ProfilesImage({ children, ...restProps }) {
   return <Image {...restProps}>{children}</Image>;
 };
 
+Profiles.Name = function ProfilesName({ children, ...restProps }) {
+  return <Name {...restProps}>{children}</Name>;
+};
+
 Profiles.propTypes = {
   children: PropTypes.node,
 };
@@ -40,6 +44,10 @@ Profiles.User.propTypes = {
 
 Profiles.Image.propTypes = {
   children: PropTypes.element,
+};
+
+Profiles.Name.propTypes = {
+  children: PropTypes.string,
 };
 
 export default Profiles;

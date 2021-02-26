@@ -9,3 +9,5 @@ export const List = styled.div``;
 export const User = styled.div``;
 
 export const Image = styled.img``;
+
+export const Name = styled.h2``;
