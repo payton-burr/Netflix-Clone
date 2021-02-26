@@ -18,8 +18,14 @@ Profiles.User = function ProfilesUser({ children, ...restProps }) {
   return <User {...restProps}>{children}</User>;
 };
 
-Profiles.Image = function ProfilesImage({ ...restProps }) {
-  return <Image {...restProps} />;
+Profiles.Image = function ProfilesImage({ src, ...restProps }) {
+  // eslint-disable-next-line prettier/prettier
+  return (
+    <Image
+      {...restProps}
+      src={src ? `/images/users/${src}` : '/images/misc/loading.gif'}
+    />
+  );
 };
 
 Profiles.Name = function ProfilesName({ children, ...restProps }) {
