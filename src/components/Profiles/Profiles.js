@@ -48,6 +48,10 @@ Profiles.User.propTypes = {
   children: PropTypes.node,
 };
 
+Profiles.Image.propTypes = {
+  src: PropTypes.string,
+};
+
 Profiles.Name.propTypes = {
   children: PropTypes.string,
 };
