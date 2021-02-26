@@ -28,7 +28,7 @@ export function SelectProfileContainer() {
               })
             }
           >
-            <Profiles.Picture src={user.photoURL} />
+            <Profiles.Image src={user.photoURL} />
             <Profiles.Name>user.displayName</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
