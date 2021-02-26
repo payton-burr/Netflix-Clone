@@ -19,7 +19,7 @@ function BrowseContainer() {
       <FooterContainer />
     </>
   ) : (
-    <SelectProfileContainer />
+    <SelectProfileContainer user={user} setProfile={setProfile} />
   );
 }
 
