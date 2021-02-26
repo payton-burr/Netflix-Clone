@@ -10,6 +10,8 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const isInvalid = firstName === '' || password === '' || emailAddress === '';
+
   return (
     <HeaderContainer>
       <Form>
@@ -39,7 +41,7 @@ function Signup() {
             onChange={({ target }) => setPassword(target.value)}
           />
 
-          <Form.Submit type="submit" disabled>
+          <Form.Submit type="submit" disabled={isInvalid}>
             Sign Up
           </Form.Submit>
 
