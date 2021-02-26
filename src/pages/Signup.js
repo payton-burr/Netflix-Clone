@@ -13,6 +13,10 @@ function Signup() {
 
   const isInvalid = firstName === '' || password === '' || emailAddress === '';
 
+  const handleSignup = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <HeaderContainer>
@@ -20,7 +24,7 @@ function Signup() {
           <Form.Title>Sign Up</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
 
-          <Form.Base method="POST">
+          <Form.Base method="POST" onSubmit={handleSignup}>
             <Form.Input
               placeholder="First Name"
               value={firstName}
