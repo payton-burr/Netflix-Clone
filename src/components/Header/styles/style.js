@@ -170,3 +170,9 @@ export const PlayButton = styled.button`
     color: #ffffff;
   }
 `;
+
+export const Profile = styled.div``;
+
+export const Picture = styled.img``;
+
+export const Dropdown = styled.div``;
