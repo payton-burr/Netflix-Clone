@@ -91,6 +91,18 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
   return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
+Header.Profile = function HeaderProfile({ children, ...restProps }) {
+  return <Profile {...restProps}>{children}</Profile>;
+};
+
+Header.Picture = function HeaderPicture({ ...restProps }) {
+  return <Picture {...restProps} />;
+};
+
+Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
+  return <Dropdown {...restProps}>{children}</Dropdown>;
+};
+
 Header.Search.propTypes = {
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
@@ -135,6 +147,18 @@ Header.FeatureCallOut.propTypes = {
 
 Header.PlayButton.propTypes = {
   children: PropTypes.string,
+};
+
+Header.Profile.propTypes = {
+  children: PropTypes.node,
+};
+
+Header.Picture.propTypes = {
+  children: PropTypes.element,
+};
+
+Header.Dropdown.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Header;
