@@ -40,6 +40,10 @@ export const Group = styled.div`
 
 export const Search = styled.input``;
 
+export const SearchIcon = styled.img``;
+
+export const SearchInput = styled.input;
+
 export const Text = styled.p`
   color: #ffffff;
   font-size: 22px;

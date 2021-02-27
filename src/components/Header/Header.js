@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import {
@@ -14,6 +14,8 @@ import {
   FeatureCallOut,
   PlayButton,
   Search,
+  SearchIcon,
+  SearchInput,
 } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
@@ -37,7 +39,21 @@ Header.Search = function HeaderSearch({
   setSearchTerm,
   ...restProps
 }) {
-  return <Search {...restProps} />;
+  const [searchActive, setSearchActive] = useState(false);
+
+  return (
+    <Search {...restProps}>
+      <SearchIcon onClick={() => setSearchActive(!searchActive)}>
+        <img src="/images/icons/search.png" alt="Search" />
+      </SearchIcon>
+      <SearchInput
+        value={searchTerm}
+        onChange={({ target }) => setSearchTerm(target.value)}
+        placeholder="Search films and series"
+        active={searchActive}
+      />
+    </Search>
+  );
 };
 
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
