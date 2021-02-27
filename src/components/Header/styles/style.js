@@ -38,11 +38,27 @@ export const Group = styled.div`
   align-items: center;
 `;
 
-export const Search = styled.input``;
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
 
-export const SearchIcon = styled.img``;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
 
-export const SearchInput = styled.input;
+export const SearchIcon = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 16px;
+  }
+`;
+
+export const SearchInput = styled.input``;
 
 export const Text = styled.p`
   color: #ffffff;

@@ -93,7 +93,7 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
 
 Header.Search.propTypes = {
   searchTerm: PropTypes.string,
-  setSearchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
 };
 
 Header.propTypes = {
