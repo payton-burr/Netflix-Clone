@@ -158,6 +158,7 @@ Header.Profile.propTypes = {
 
 Header.Picture.propTypes = {
   children: PropTypes.element,
+  src: PropTypes.string,
 };
 
 Header.Dropdown.propTypes = {

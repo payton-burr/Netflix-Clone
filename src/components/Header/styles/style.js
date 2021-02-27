@@ -171,8 +171,63 @@ export const PlayButton = styled.button`
   }
 `;
 
-export const Profile = styled.div``;
+export const Picture = styled.button`
+  background: url(${({ src }) => src})
+  background-size: contain;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+`;
 
-export const Picture = styled.img``;
+export const Dropdown = styled.div`
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  padding: 10px;
+  width: 100px;
+  top: 32px;
+  right: 10px;
 
-export const Dropdown = styled.div``;
+  ${Group}:last-of-type ${Link} {
+    cursor: pointer;
+  }
+
+  ${Group} {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    ${Link}, ${Picture} {
+      cursor: default;
+    }
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+`;
+
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+
+  button {
+    cursor: pointer;
+  }
+
+  &:hover > ${Dropdown} {
+    display: flex;
+    flex-direction: column;
+  }
+`;
