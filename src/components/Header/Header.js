@@ -98,8 +98,8 @@ Header.Profile = function HeaderProfile({ children, ...restProps }) {
   return <Profile {...restProps}>{children}</Profile>;
 };
 
-Header.Picture = function HeaderPicture({ ...restProps }) {
-  return <Picture {...restProps} />;
+Header.Picture = function HeaderPicture({ src, ...restProps }) {
+  return <Picture src={src} {...restProps} />;
 };
 
 Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
