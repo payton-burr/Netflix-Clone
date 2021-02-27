@@ -38,6 +38,8 @@ export const Group = styled.div`
   align-items: center;
 `;
 
+export const Search = styled.input``;
+
 export const Text = styled.p`
   color: #ffffff;
   font-size: 22px;

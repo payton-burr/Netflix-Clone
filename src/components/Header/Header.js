@@ -13,6 +13,7 @@ import {
   Feature,
   FeatureCallOut,
   PlayButton,
+  Search,
 } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
@@ -29,6 +30,14 @@ Header.Container = function HeaderContainer({ children, ...restProps }) {
 
 Header.Group = function HeaderGroup({ children, ...restProps }) {
   return <Group {...restProps}>{children}</Group>;
+};
+
+Header.Search = function HeaderSearch({
+  searchTerm,
+  setSearchTerm,
+  ...restProps
+}) {
+  return <Search {...restProps} />;
 };
 
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
@@ -64,6 +73,11 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({
 
 Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
   return <PlayButton {...restProps}>{children}</PlayButton>;
+};
+
+Header.Search.propTypes = {
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.string,
 };
 
 Header.propTypes = {
