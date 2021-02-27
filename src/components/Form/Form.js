@@ -82,7 +82,7 @@ Form.Submit.propTypes = {
 };
 
 Form.Error.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 export default Form;
