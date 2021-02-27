@@ -92,4 +92,16 @@ Header.ButtonLink.propTypes = {
   children: PropTypes.string,
 };
 
+Header.Feature.propTypes = {
+  children: PropTypes.node,
+};
+
+Header.FeatureCallOut.propTypes = {
+  children: PropTypes.string,
+};
+
+Header.PlayButton.propTypes = {
+  children: PropTypes.string,
+};
+
 export default Header;
