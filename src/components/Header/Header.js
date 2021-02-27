@@ -16,6 +16,9 @@ import {
   Search,
   SearchIcon,
   SearchInput,
+  Profile,
+  Picture,
+  Dropdown,
 } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
