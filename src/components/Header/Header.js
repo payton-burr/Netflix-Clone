@@ -48,8 +48,20 @@ Header.Container.propTypes = {
   children: PropTypes.node,
 };
 
+Header.Frame.propTypes = {
+  children: PropTypes.node,
+};
+
+Header.Group.propTypes = {
+  children: PropTypes.node,
+};
+
 Header.Logo.propTypes = {
   to: PropTypes.string,
+};
+
+Header.TextLink.propTypes = {
+  children: PropTypes.string,
 };
 
 Header.ButtonLink.propTypes = {
