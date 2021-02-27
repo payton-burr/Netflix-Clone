@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Header, Loading } from '../components';
 import FirebaseContext from '../context/firebase';
 import { SelectProfileContainer } from './SelectProfileContainer';
@@ -18,6 +18,12 @@ function BrowseContainer() {
     displayName: 'Payton',
     photoURL: '1',
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, [user]);
 
   return profile.displayName ? (
     <>
