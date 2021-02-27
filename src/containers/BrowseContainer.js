@@ -36,7 +36,7 @@ function BrowseContainer() {
             </Header.Link>
             <Header.Link
               active={category === 'films' ? 'true' : 'false'}
-              onClick={() => setCategory('series')}
+              onClick={() => setCategory('films')}
             >
               Films
             </Header.Link>
