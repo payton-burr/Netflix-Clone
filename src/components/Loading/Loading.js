@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Spinner, LockBody, ReleaseBody } from './styles/style';
+import { Spinner, Picture, LockBody, ReleaseBody } from './styles/style';
 
 function Loading({ src, ...restProps }) {
   return (
     <Spinner {...restProps}>
       <LockBody />
+      <Picture src={`/public/images/users/${src}.png`} />
     </Spinner>
   );
 }
