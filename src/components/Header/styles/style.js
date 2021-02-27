@@ -172,7 +172,7 @@ export const PlayButton = styled.button`
 `;
 
 export const Picture = styled.button`
-  background: url(${({ src }) => src})
+  background: url(${({ src }) => src});
   background-size: contain;
   border: 0;
   width: 32px;
