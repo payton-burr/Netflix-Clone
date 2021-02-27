@@ -11,8 +11,20 @@ function Header({ bg = true, children, ...restProps }) {
   );
 }
 
-Header.Container = function HeaderContainer({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+Header.Frame = function HeaderFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
+};
+
+Header.Group = function HeaderGroup({ children, ...restProps }) {
+  return <Group {...restProps}>{children}</Group>;
+};
+
+Header.Group = function HeaderGroup({ children, ...restProps }) {
+  return <Group {...restProps}>{children}</Group>;
+};
+
+Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
+  return <TextLink {...restProps}>{children}</TextLink>;
 };
 
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
