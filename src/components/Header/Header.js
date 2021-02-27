@@ -23,16 +23,16 @@ Header.Group = function HeaderGroup({ children, ...restProps }) {
   return <Group {...restProps}>{children}</Group>;
 };
 
-Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
-  return <TextLink {...restProps}>{children}</TextLink>;
-};
-
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
     <ReactRouterLink to={to}>
       <Logo {...restProps} />
     </ReactRouterLink>
   );
+};
+
+Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
+  return <TextLink {...restProps}>{children}</TextLink>;
 };
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
