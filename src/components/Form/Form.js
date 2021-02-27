@@ -62,7 +62,7 @@ Form.Title.propTypes = {
 };
 
 Form.Text.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 
 Form.TextSmall.propTypes = {
@@ -70,7 +70,7 @@ Form.TextSmall.propTypes = {
 };
 
 Form.Link.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 Form.Input.propTypes = {
@@ -78,7 +78,7 @@ Form.Input.propTypes = {
 };
 
 Form.Submit.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 Form.Error.propTypes = {

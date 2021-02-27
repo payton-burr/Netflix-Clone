@@ -44,7 +44,7 @@ function Signin() {
             </Form.Submit>
 
             <Form.Text>
-              New to Netflix?{' '}
+              New to Netflix?
               <Form.Link to={ROUTES.SIGN_UP}>Sign up now.</Form.Link>
             </Form.Text>
 
