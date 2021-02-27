@@ -1,7 +1,15 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-export const Spinner = styled.div``;
+export const Picture = styled.img``;
 
-export const LockBody = styled.div``;
+export const LockBody = createGlobalStyle`
+    body {
+        overflow: hidden;
+    }
+`;
 
-export const ReleaseBody = styled.div``;
+export const ReleaseBody = createGlobalStyle`
+    body {
+        overflow: visible;
+    }
+`;
