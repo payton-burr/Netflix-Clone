@@ -21,7 +21,7 @@ function BrowseContainer() {
   return profile.displayName ? (
     <>
       <Header src="joker1" dontShowOnSmallViewPort>
-        <Header.Frame>
+        <Header.Container>
           <Header.Group>
             <Header.Logo
               to={ROUTES.HOME}
@@ -41,7 +41,7 @@ function BrowseContainer() {
               Films
             </Header.TextLink>
           </Header.Group>
-        </Header.Frame>
+        </Header.Container>
       </Header>
       <FooterContainer />
     </>
