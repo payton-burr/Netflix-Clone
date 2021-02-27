@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useContext } from 'react';
-import { Header } from '../components';
+import { Header, Loading } from '../components';
 import FirebaseContext from '../context/firebase';
 import { SelectProfileContainer } from './SelectProfileContainer';
 import { FooterContainer } from './FooterContainer';
@@ -21,6 +21,7 @@ function BrowseContainer() {
 
   return profile.displayName ? (
     <>
+      {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
       <Header src="joker1" dontShowOnSmallViewPort>
         <Header.Container>
           <Header.Group>
