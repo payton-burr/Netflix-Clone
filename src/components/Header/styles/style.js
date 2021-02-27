@@ -97,3 +97,9 @@ export const ButtonLink = styled(ReactRouterLink)`
     background-color: #f40612;
   }
 `;
+
+export const Feature = styled.div``;
+
+export const FeatureCallOut = styled.div``;
+
+export const PlayButton = styled.button``;

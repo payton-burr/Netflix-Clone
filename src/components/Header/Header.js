@@ -10,6 +10,9 @@ import {
   Group,
   Text,
   Link,
+  Feature,
+  FeatureCallOut,
+  PlayButton,
 } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
