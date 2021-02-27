@@ -35,6 +35,8 @@ export const Container = styled.div`
 
 export const Group = styled.div``;
 
+export const Text = styled.div``;
+
 export const Link = styled.p`
   color: #ffffff;
   text-decoration: none;
@@ -50,8 +52,6 @@ export const Link = styled.p`
     margin-right: 0;
   }
 `;
-
-export const TextLink = styled.div``;
 
 export const Logo = styled.img`
   width: 133.2px;

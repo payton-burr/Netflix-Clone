@@ -8,7 +8,8 @@ import {
   Logo,
   ButtonLink,
   Group,
-  TextLink,
+  Text,
+  Link,
 } from './styles/style';
 
 function Header({ bg = true, children, ...restProps }) {
@@ -35,8 +36,12 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
   );
 };
 
-Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
-  return <TextLink {...restProps}>{children}</TextLink>;
+Header.Text = function HeaderText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
+};
+
+Header.Link = function HeaderLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
 };
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
@@ -60,7 +65,11 @@ Header.Logo.propTypes = {
   to: PropTypes.string,
 };
 
-Header.TextLink.propTypes = {
+Header.Text.propTypes = {
+  children: PropTypes.string,
+};
+
+Header.Link.propTypes = {
   children: PropTypes.string,
 };
 
