@@ -92,13 +92,15 @@ function BrowseContainer({ slides }) {
       </Header>
 
       <Card.Group>
-        {slideRows.map(slideItem) => (
+        {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}}`}>
             <Card.Title>{slideItem.title}</Card.Title>
             <Card.Entities>
-              {slideItem.data.map(item => (
+              {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
-                  <Card.Image src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}/>
+                  <Card.Image
+                    src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                  />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>
                     <Card.Text>${item.description}</Card.Text>
@@ -107,7 +109,7 @@ function BrowseContainer({ slides }) {
               ))}
             </Card.Entities>
           </Card>
-        )}
+        ))}
       </Card.Group>
       <FooterContainer />
     </>
