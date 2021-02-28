@@ -84,6 +84,7 @@ Card.Feature = function CardFeature({ category, children, ...restProps }) {
 
   return showFeature ? (
     <Feature
+      {...restProps}
       src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg}`}
     >
       <Content>
@@ -109,6 +110,40 @@ Card.Feature = function CardFeature({ category, children, ...restProps }) {
 };
 
 Card.propTypes = {
+  children: PropTypes.node,
+};
+
+Card.Group.propTypes = {
+  children: PropTypes.node,
+};
+
+Card.Title.propTypes = {
+  children: PropTypes.string,
+};
+
+Card.SubTitle.propTypes = {
+  children: PropTypes.string,
+};
+
+Card.Text.propTypes = {
+  children: PropTypes.string,
+};
+
+Card.Entities.propTypes = {
+  children: PropTypes.node,
+};
+
+Card.Meta.propTypes = {
+  children: PropTypes.node,
+};
+
+Card.Item.propTypes = {
+  children: PropTypes.element,
+  item: PropTypes.object,
+};
+
+Card.Feature.propTypes = {
+  category: PropTypes.string,
   children: PropTypes.node,
 };
 
