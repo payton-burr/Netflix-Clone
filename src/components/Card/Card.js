@@ -1,7 +1,23 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useContext, createContext } from 'react';
 import PropTypes from 'prop-types';
-import { Container } from '../Jumbotron/styles/style';
+import {
+  Container,
+  Group,
+  Title,
+  SubTitle,
+  Text,
+  Entities,
+  Meta,
+  Item,
+  Image,
+  Feature,
+  Content,
+  FeatureTitle,
+  FeatureText,
+  FeatureClose,
+  Maturity,
+} from './styles/style';
 
 const FeatureContext = createContext();
 
