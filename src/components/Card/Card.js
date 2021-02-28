@@ -126,7 +126,7 @@ Card.SubTitle.propTypes = {
 };
 
 Card.Text.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.array,
 };
 
 Card.Entities.propTypes = {
@@ -138,7 +138,7 @@ Card.Meta.propTypes = {
 };
 
 Card.Item.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
   item: PropTypes.object,
 };
 
