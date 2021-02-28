@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useContext, createContext } from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '../Jumbotron/styles/style';
@@ -9,7 +10,9 @@ function Card({ children, ...restProps }) {
   const [itemFeature, setItemFeature] = useState(false);
 
   return (
-    <FeatureContext.Provider value={{}}>
+    <FeatureContext.Provider
+      value={{ showFeature, setShowFeature, itemFeature, setItemFeature }}
+    >
       <Container {...restProps}>{children}</Container>
     </FeatureContext.Provider>
   );
@@ -37,6 +40,21 @@ Card.Entities = function CardEntities({ children, ...restProps }) {
 
 Card.Meta = function CardMeta({ children, ...restProps }) {
   return <Meta {...restProps}>{children}</Meta>;
+};
+
+Card.Item = function CardItem({ item, children, ...restProps }) {
+  const { setShowFeature, setItemFeature } = useContext(FeatureContext);
+  return (
+    <Item
+      onClick={() => {
+        setItemFeature(item);
+        setShowFeature(true);
+      }}
+      {...restProps}
+    >
+      {children}
+    </Item>
+  );
 };
 
 Card.propTypes = {
