@@ -108,9 +108,7 @@ function BrowseContainer({ slides }) {
                 </Card.Item>
               ))}
             </Card.Entities>
-            <Card.Feature category={category}>
-              <p>I am the Feature</p>
-            </Card.Feature>
+            <Card.Feature category={category} />
           </Card>
         ))}
       </Card.Group>
