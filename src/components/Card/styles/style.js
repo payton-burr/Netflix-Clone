@@ -49,7 +49,14 @@ export const SubTitle = styled.p`
   display: none;
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  margin-top: 5px;
+  font-size: 10px;
+  color: #ffffff;
+  margin-bottom: 0;
+  line-height: normal;
+  display: none;
+`;
 
 export const Entities = styled.div``;
 
