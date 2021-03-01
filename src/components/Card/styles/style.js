@@ -161,6 +161,19 @@ export const Feature = styled.div`
   }
 `;
 
-export const FeatureClose = styled.button``;
+export const FeatureClose = styled.button`
+  color: #ffffff;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+  }
+`;
 
 export const Maturity = styled.div``;
