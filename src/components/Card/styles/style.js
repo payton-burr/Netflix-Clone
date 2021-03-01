@@ -117,7 +117,31 @@ export const Image = styled.img`
   margin: 0;
 `;
 
-export const Feature = styled.div``;
+export const Feature = styled.div`
+  display: flex;
+  flex-direction: row;
+  background: url(${({ src }) => src});
+  position: relative;
+  height: 360px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-color: #000000;
+
+  @media (max-width: 1000px) {
+    height: auto;
+    background-size: auto;
+
+    ${Title} {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    ${FeatureText} {
+      font-size: 14px;
+    }
+  }
+`;
 
 export const Content = styled.div``;
 
