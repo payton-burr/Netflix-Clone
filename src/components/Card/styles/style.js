@@ -73,7 +73,14 @@ export const Meta = styled.div`
 
 export const Item = styled.div``;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  border: 0;
+  width: 100%;
+  max-width: 305px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+`;
 
 export const Feature = styled.div``;
 
