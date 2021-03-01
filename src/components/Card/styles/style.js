@@ -41,7 +41,13 @@ export const Group = styled.div`
   }
 `;
 
-export const SubTitle = styled.p``;
+export const SubTitle = styled.p`
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 0;
+  user-select: none;
+  display: none;
+`;
 
 export const Text = styled.p``;
 
