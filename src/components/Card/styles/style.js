@@ -119,7 +119,9 @@ export const Image = styled.img`
 
 export const Content = styled.div``;
 
-export const FeatureTitle = styled(Title)``;
+export const FeatureTitle = styled(Title)`
+  margin-left: 0;
+`;
 
 export const FeatureText = styled.p`
   font-size: 18px;
