@@ -117,6 +117,22 @@ export const Image = styled.img`
   margin: 0;
 `;
 
+export const Content = styled.div``;
+
+export const FeatureTitle = styled(Title)``;
+
+export const FeatureText = styled.p`
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: ${({ fontWeight }) =>
+    fontWeight === 'bold' ? 'bold' : 'normal'};
+  margin: 0;
+
+  @media (max-width: 800px) {
+    line-height: 22px;
+  }
+`;
+
 export const Feature = styled.div`
   display: flex;
   flex-direction: row;
@@ -140,22 +156,6 @@ export const Feature = styled.div`
     ${FeatureText} {
       font-size: 14px;
     }
-  }
-`;
-
-export const Content = styled.div``;
-
-export const FeatureTitle = styled(Title)``;
-
-export const FeatureText = styled.p`
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: ${({ fontWeight }) =>
-    fontWeight === 'bold' ? 'bold' : 'normal'};
-  margin: 0;
-
-  @media (max-width: 800px) {
-    line-height: 22px;
   }
 `;
 
