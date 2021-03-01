@@ -58,7 +58,10 @@ export const Text = styled.p`
   display: none;
 `;
 
-export const Entities = styled.div``;
+export const Entities = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 export const Meta = styled.div``;
 
