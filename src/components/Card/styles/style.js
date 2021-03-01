@@ -117,7 +117,16 @@ export const Image = styled.img`
   margin: 0;
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  margin: 56px;
+  max-width: 500px;
+  line-height: normal;
+
+  @media (max-width: 1000px) {
+    margin: 30px;
+    max-width: none;
+  }
+`;
 
 export const FeatureTitle = styled(Title)`
   margin-left: 0;
