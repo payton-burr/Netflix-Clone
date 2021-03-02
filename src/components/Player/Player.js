@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useContext, createContext } from 'react';
 import ReactDOM from 'react-dom';
-import {} from './styles/style';
+import { Container, Overlay, Inner, Button } from './styles/style';
 
 export const PlayerContext = createContext();
 
