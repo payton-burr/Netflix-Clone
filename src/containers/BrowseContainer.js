@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useContext, useEffect } from 'react';
 import Fuse from 'fuse.js';
-import { Card, Header, Loading } from '../components';
+import { Card, Header, Loading, Player } from '../components';
 import FirebaseContext from '../context/firebase';
 import { SelectProfileContainer } from './SelectProfileContainer';
 import { FooterContainer } from './FooterContainer';
@@ -127,7 +127,12 @@ function BrowseContainer({ slides }) {
           </Card>
         ))}
       </Card.Group>
-      <FooterContainer />
+      <FooterContainer>
+        <Player>
+          <Player.Button />
+          <Player.Video />
+        </Player>
+      </FooterContainer>
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
