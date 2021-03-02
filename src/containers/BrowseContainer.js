@@ -123,16 +123,16 @@ function BrowseContainer({ slides }) {
                 </Card.Item>
               ))}
             </Card.Entities>
-            <Card.Feature category={category} />
+            <Card.Feature category={category}>
+              <Player>
+                <Player.Button />
+                <Player.Video />
+              </Player>
+            </Card.Feature>
           </Card>
         ))}
       </Card.Group>
-      <FooterContainer>
-        <Player>
-          <Player.Button />
-          <Player.Video />
-        </Player>
-      </FooterContainer>
+      <FooterContainer />
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
