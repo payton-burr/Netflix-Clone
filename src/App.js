@@ -8,7 +8,6 @@ import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 
 function App() {
   const { user } = useAuthListener();
-  console.log(user);
 
   return (
     <Router>
