@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useContext, createContext } from 'react';
 import ReactDOM from 'react-dom';
-import { Container, Overlay, Inner, Button } from './styles/style';
+import { Container, Overlay, Inner, Button, Close } from './styles/style';
 
 export const PlayerContext = createContext();
 
@@ -20,12 +20,13 @@ Player.Video = function PlayerVideo({ ...restProps }) {
 
   return showPlayer
     ? ReactDOM.createPortal(
-        <Overlay {...restProps} onClick={() => setShowPlayer(false)}>
+        <Overlay {...restProps}>
           <Inner>
             <video id="netflix-player" controls>
               <track kind="captions" />
               <source src="/videos/bunny.mp4" type="video/mp4" />
             </video>
+            <Close onClick={() => setShowPlayer(false)} />
           </Inner>
         </Overlay>,
         document.body
@@ -34,10 +35,10 @@ Player.Video = function PlayerVideo({ ...restProps }) {
 };
 
 Player.Button = function PlayerButton({ children, ...restProps }) {
-  const { showPlayer, setShowPlayer } = useContext(PlayerContext);
+  const { setShowPlayer } = useContext(PlayerContext);
 
   return (
-    <Button {...restProps} onClick={() => setShowPlayer(!showPlayer)}>
+    <Button {...restProps} onClick={() => setShowPlayer(true)}>
       Play
     </Button>
   );

@@ -46,3 +46,33 @@ export const Button = styled.button`
     background-color: #ff0a16;
   }
 `;
+
+export const Close = styled.button`
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    content: '';
+    height: 30px;
+    width: 2px;
+    background-color: #ffffff;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+`;
